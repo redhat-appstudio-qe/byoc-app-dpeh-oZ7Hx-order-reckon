@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: lbmv
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-juad-tenant/byoc-app-dpeh/lbmv@sha256:2220e347cc638b6ef0541b6d432122fbc43b60e0ab32a0bb800ba7d63eb91dfe
         name: my-java-quarkus
         ports:
         - containerPort: 8081

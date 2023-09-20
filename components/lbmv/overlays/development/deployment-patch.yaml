@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: lbmv
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-juad-tenant/byoc-app-dpeh/lbmv@sha256:2220e347cc638b6ef0541b6d432122fbc43b60e0ab32a0bb800ba7d63eb91dfe
+        name: my-java-quarkus
+        resources: {}
+status: {}
